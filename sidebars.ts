@@ -64,7 +64,6 @@ const sidebars: SidebarsConfig = {
         'manage/enterprise-sign-in',
         'manage/manage-service-contacts',
         'manage/subscriptions-and-billing',
-        'manage/manage-your-subscription',
         'manage/private-network-access',
         'manage/container-registries',
       ],
