@@ -12,7 +12,7 @@ const sidebars: SidebarsConfig = {
       className: 'sidebar-section-icon-get-started',
       collapsed: false,
       items: [
-        'get-started/what-is-wso2-cloud',
+        'get-started/what-is-choreo-cloud',
         'get-started/sign-up',
         'get-started/key-concepts',
       ],
@@ -27,27 +27,27 @@ const sidebars: SidebarsConfig = {
         {
           type: 'link',
           label: 'Agent Management',
-          href: 'https://wso2.com/agent-platform/docs/cloud/get-started/what-is-amp/',
+          href: 'https://choreolabs.com/agent-platform/docs/cloud/get-started/what-is-amp/',
         },
         {
           type: 'link',
           label: 'API Management',
-          href: 'https://wso2.com/api-platform/docs/',
+          href: 'https://choreolabs.com/api-platform/docs/',
         },
         {
           type: 'link',
           label: 'Integration Management',
-          href: 'https://wso2.com/integration-platform/docs/manage/cloud/overview',
+          href: 'https://choreolabs.com/integration-platform/docs/',
         },
         {
           type: 'link',
           label: 'Identity and Access Management',
-          href: 'https://wso2.com/identity-platform/docs/',
+          href: 'https://choreolabs.com/identity-platform/docs/',
         },
         {
           type: 'link',
           label: 'Platform Engineering',
-          href: 'https://wso2.com/engineering-platform/developer-platform/docs/',
+          href: 'https://choreolabs.com/engineering-platform/developer-platform/docs/',
         },
       ],
     },
