@@ -18,40 +18,6 @@ const sidebars: SidebarsConfig = {
       ],
     },
     {
-      // Each service has its own docs site; these entries link out to it.
-      type: 'category',
-      label: 'Services',
-      className: 'sidebar-section-icon-services',
-      collapsed: false,
-      items: [
-        {
-          type: 'link',
-          label: 'Agent Management',
-          href: 'https://choreolabs.com/agent-platform/docs/cloud/get-started/what-is-amp/',
-        },
-        {
-          type: 'link',
-          label: 'API Management',
-          href: 'https://choreolabs.com/api-platform/docs/',
-        },
-        {
-          type: 'link',
-          label: 'Integration Management',
-          href: 'https://choreolabs.com/integration-platform/docs/',
-        },
-        {
-          type: 'link',
-          label: 'Identity and Access Management',
-          href: 'https://choreolabs.com/identity-platform/docs/',
-        },
-        {
-          type: 'link',
-          label: 'Platform Engineering',
-          href: 'https://choreolabs.com/engineering-platform/developer-platform/docs/',
-        },
-      ],
-    },
-    {
       type: 'category',
       label: 'Manage your organization',
       className: 'sidebar-section-icon-manage',
