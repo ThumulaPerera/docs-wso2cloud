@@ -24,7 +24,7 @@ This article shows you how to create the notification channels that receive your
 
 ## Create a channel
 
-1. Sign in to the [WSO2 Cloud console](https://console.cloud.wso2.com).
+1. Sign in to the [Choreo Cloud console](https://console.cloud.wso2.com).
 2. In the left navigation, select **Observability**, then **Alerts**.
 3. Select the **Channels** tab, then select **Create channel**.
 4. In **Name**, enter a name for the channel, such as `ops-webhook`. Use lowercase letters, numbers, and hyphens, starting and ending with a letter or number.
@@ -75,7 +75,7 @@ Tests are rate-limited for each organization. If you send too many, wait a few m
 
 ## Webhook payload
 
-When a rule fires, WSO2 Cloud sends a `POST` request with a JSON body to the webhook URL, with the channel's headers. All values are strings. For example:
+When a rule fires, Choreo Cloud sends a `POST` request with a JSON body to the webhook URL, with the channel's headers. All values are strings. For example:
 
 ```json
 {

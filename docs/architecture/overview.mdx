@@ -1,32 +1,32 @@
 ---
 sidebar_position: 1
 title: Architecture overview
-description: The high-level architecture of WSO2 Cloud, with a control plane where every service shares one organization, its users, and billing, and data planes where your components run.
+description: The high-level architecture of Choreo Cloud, with a control plane where every service shares one organization, its users, and billing, and data planes where your components run.
 ---
 
 # Architecture overview
 
-WSO2 Cloud separates where you manage things from where things run:
+Choreo Cloud separates where you manage things from where things run:
 
-- The **control plane** is where you manage your organization and your components, through the WSO2 Cloud console. Each service has its own control plane, and all of them share one organization, its users, and billing.
+- The **control plane** is where you manage your organization and your components, through the Choreo Cloud console. Each service has its own control plane, and all of them share one organization, its users, and billing.
 - The **data plane** is where your components, such as agents, integrations, and APIs, run and your runtime traffic flows.
 
 <div className="architecture">
 
-- **Control plane** Where you manage, through the WSO2 Cloud console.
+- **Control plane** Where you manage, through the Choreo Cloud console.
   - **Agent Management**
   - **API Management**
   - **Integration Management**
   - **Identity and Access Management**
-  - **Platform Engineering** Runs separately, linked from WSO2 Cloud.
+  - **Platform Engineering** Runs separately, linked from Choreo Cloud.
   - **Shared by every service** Organization · Access control · Billing
 - **Data plane** Where your components run, and your runtime traffic flows.
-  - **Cloud data plane** Shared by many organizations, run by WSO2.
+  - **Cloud data plane** Shared by many organizations, run by Choreo Labs.
     - Agents
     - Integrations
     - APIs
     - Identity
-  - **Private data plane** Dedicated to you, run by WSO2 or by you.
+  - **Private data plane** Dedicated to you, run by Choreo Labs or by you.
     - Agents
     - Integrations
     - APIs
@@ -46,7 +46,7 @@ It also holds organization-wide settings, such as [service contacts](../manage/m
 
 ## Services
 
-Each service covers the full lifecycle of one kind of work, including governance. Every service is part of the WSO2 Cloud console and has its own documentation. A service's control plane manages the components you build with it, such as agents, integrations, and APIs. The control plane runs as SaaS, operated by WSO2. Platform Engineering runs separately as a dedicated deployment, and you open it from WSO2 Cloud. Projects and environments are shared, so components from different services can live in the same project and run in the same environments.
+Each service covers the full lifecycle of one kind of work, including governance. Every service is part of the Choreo Cloud console and has its own documentation. A service's control plane manages the components you build with it, such as agents, integrations, and APIs. The control plane runs as SaaS, operated by Choreo Labs. Platform Engineering runs separately as a dedicated deployment, and you open it from Choreo Cloud. Projects and environments are shared, so components from different services can live in the same project and run in the same environments.
 
 ## Data plane
 

@@ -24,7 +24,7 @@ This article shows you how to create alert rules that watch a component and send
 
 ## Create a rule
 
-1. Sign in to the [WSO2 Cloud console](https://console.cloud.wso2.com).
+1. Sign in to the [Choreo Cloud console](https://console.cloud.wso2.com).
 2. In the left navigation, select **Observability**, then **Alerts**.
 3. Select the **Rules** tab, then select **Create rule**.
 4. Under **Component**, select the **Project**, the **Component**, and the **Deployment track**. Keep **Default** unless you want the rule on one deployment track only. For a component with no other deployment tracks, **Default** is the only choice.
@@ -120,7 +120,7 @@ The rule is removed from every environment, and this can't be undone. Deleting a
 
 | Problem | What to check |
 | --- | --- |
-| "Your plan allows *N* alert rules. Upgrade it to add more." | Your organization has reached its WSO2 Cloud plan's alert rule limit. Delete rules you don't need, or [upgrade your subscription](../manage/subscriptions-and-billing.mdx#subscribe-to-enterprise). |
+| "Your plan allows *N* alert rules. Upgrade it to add more." | Your organization has reached its Choreo Cloud plan's alert rule limit. Delete rules you don't need, or [upgrade your subscription](../manage/subscriptions-and-billing.mdx#subscribe-to-enterprise). |
 | You can't create a rule on a component | The component is deployed to at least one environment, and has fewer than 10 rules on the deployment track. Scheduled automations don't support alert rules. For other types that don't, the form says "Alert rules aren't available for this component's type." |
 | The form says an environment has no default channel | Pick a channel for the environment, or [create a channel](./notification-channels.mdx#create-a-channel) there. |
 | The rule shows **Waiting for deploy** | Deploy the component to the environment. |
