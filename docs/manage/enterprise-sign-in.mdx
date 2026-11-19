@@ -1,12 +1,12 @@
 ---
 sidebar_position: 5
 title: Set up enterprise sign-in
-description: Let people in your organization sign in to WSO2 Cloud with your own OpenID Connect identity provider.
+description: Let people in your organization sign in to Choreo Cloud with your own OpenID Connect identity provider.
 ---
 
 # Set up enterprise sign-in
 
-This article shows you how to connect your organization's identity provider to WSO2 Cloud, so people in your organization can sign in with their work account instead of Google or GitHub.
+This article shows you how to connect your organization's identity provider to Choreo Cloud, so people in your organization can sign in with their work account instead of Google or GitHub.
 
 ## How it works
 
@@ -18,15 +18,15 @@ This article shows you how to connect your organization's identity provider to W
 ## Prerequisites
 
 - Membership in the **Admin** group of the organization. Other members can see whether enterprise sign-in is on, but can't change it.
-- Admin access to your identity provider, to register WSO2 Cloud as a client application.
+- Admin access to your identity provider, to register Choreo Cloud as a client application.
 
-## Register WSO2 Cloud at your identity provider
+## Register Choreo Cloud at your identity provider
 
-1. Sign in to the [WSO2 Cloud console](https://console.cloud.wso2.com).
+1. Sign in to the [Choreo Cloud console](https://console.cloud.wso2.com).
 2. In the top bar, select **Settings**.
 3. Under **Organization**, select **Enterprise sign-in**.
 4. Select **Set up identity provider**.
-5. Copy the **Redirect URI**. It's set by WSO2 Cloud and stays the same if you later change provider.
+5. Copy the **Redirect URI**. It's set by Choreo Cloud and stays the same if you later change provider.
 6. At your identity provider, create an OIDC client application with that redirect URI. Note its client ID and client secret.
 
 ## Connect your identity provider
@@ -47,7 +47,7 @@ On the **Set up identity provider** page, fill in the details of the client you 
 
 Your provider publishes its endpoints and issuer in its OIDC discovery document, usually at `https://<provider>/.well-known/openid-configuration`.
 
-Under **Attribute mappings**, you can map the attributes your provider sends to WSO2 Cloud user attributes. Without mappings, attributes keep the names your provider sends.
+Under **Attribute mappings**, you can map the attributes your provider sends to Choreo Cloud user attributes. Without mappings, attributes keep the names your provider sends.
 
 Select **Create**.
 
@@ -66,7 +66,7 @@ When **Use for sign-in** is off, nobody can use enterprise sign-in. The configur
 2. Change the fields you need. Leave **Client secret** unchanged to keep the stored secret.
 3. Select **Save changes**.
 
-If you change the provider, WSO2 Cloud asks you to confirm, and uses the new settings as soon as you save. A new provider may send attributes with different names, so check your attribute mappings.
+If you change the provider, Choreo Cloud asks you to confirm, and uses the new settings as soon as you save. A new provider may send attributes with different names, so check your attribute mappings.
 
 ## Next steps
 

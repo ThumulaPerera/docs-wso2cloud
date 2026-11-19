@@ -7,8 +7,8 @@ import llmsTxtPlugin from './plugins/llms-txt';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'WSO2 Cloud Docs',
-  tagline: 'Documentation for WSO2 Cloud',
+  title: 'Choreo Cloud Docs',
+  tagline: 'Documentation for Choreo Cloud',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -69,9 +69,9 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'WSO2 Cloud',
+      title: 'Choreo Cloud',
       logo: {
-        alt: 'WSO2 Cloud',
+        alt: 'Choreo Cloud',
         src: 'img/favicon.ico',
       },
       items: [
@@ -96,7 +96,7 @@ const config: Config = {
           title: 'Documentation',
           items: [
             {
-              label: 'What is WSO2 Cloud?',
+              label: 'What is Choreo Cloud?',
               to: '/docs/get-started/what-is-wso2-cloud',
             },
           ],
@@ -109,7 +109,7 @@ const config: Config = {
               href: 'https://github.com/wso2/docs-wso2cloud',
             },
             {
-              label: 'WSO2',
+              label: 'Choreo Labs',
               href: 'https://wso2.com',
             },
           ],
