@@ -16,9 +16,9 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Production docs host, as linked from the WSO2 Cloud console footer. The same
+  // Production docs host, as linked from the Choreo Labs Cloud console footer. The same
   // image is promoted dev -> stage -> prod, so this must be the prod URL.
-  url: 'https://docs.wso2.com',
+  url: 'https://docs.choreolabs.com',
   baseUrl: '/',
 
   organizationName: 'wso2',
@@ -115,7 +115,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} WSO2 LLC. Licensed under Apache License 2.0.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Choreo Labs LLC. Licensed under Apache License 2.0.`,
     },
     prism: {
       theme: prismThemes.github,
