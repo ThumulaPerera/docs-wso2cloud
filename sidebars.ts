@@ -15,6 +15,7 @@ const sidebars: SidebarsConfig = {
         'get-started/what-is-choreo-cloud',
         'get-started/sign-up',
         'get-started/key-concepts',
+        'get-started/try-a-sample',
       ],
     },
     {
