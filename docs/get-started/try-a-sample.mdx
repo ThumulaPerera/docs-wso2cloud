@@ -22,7 +22,7 @@ Before an agent goes to production, consider the following aspects:
 - **What the agent does** should be visible, because an agent decides its own steps. Agent Management records each run as a trace, with every LLM call, tool call, and MCP request, along with token counts and latency. See [Observability](https://choreolabs.com/agent-platform/docs/cloud/concepts/observability/).
 - **How well the agent performs** needs to be measured, because an answer can look right and still be wrong. Evaluators in Agent Management score the agent's runs on accuracy, safety, reasoning, and tool use, so you can tell whether a change made the agent better. See [Evaluation](https://choreolabs.com/agent-platform/docs/cloud/concepts/evaluation/).
 - **Guardrails** stop the requests and answers that should never pass. Guardrails on an LLM provider check what goes to the model and what comes back, for every agent that uses that provider. See [Add guardrails to your agent](https://choreolabs.com/agent-platform/docs/cloud/tutorials/govern-the-model/).
-- **The information the agent uses** already sits in your APIs and services. In Integration, you can build MCP servers that provide the information agents need, so you don't need to build new services for the agent.
+- **The information the agent uses** already sits in your APIs and services. For example, you can build MCP servers in Integration that provide the information agents need, so you don't need to build new services for the agent.
 
 ## What the sample shows
 
@@ -46,6 +46,8 @@ The sample is a support agent for a demo outdoor gear store. It answers question
 2. Under **Try a sample**, deploy the sample in one of two ways:
    - Select **Deploy sample**, and the console deploys the three components for you.
    - Select **Ask Choreo Agent to deploy**, and Choreo Agent deploys them, guiding you through each step.
+
+   The agent uses an Anthropic LLM provider from your organization. If there isn't one, the console asks you to create it in Agent Management before the deploy continues.
 3. When the deploy is done, open the **Customer Support Agent** in Agent Management.
 4. In **Try It**, ask the agent about the store. For example:
    - Which tents do you sell, and how are they different?
@@ -58,4 +60,5 @@ The sample's source code is available on [GitHub](https://github.com/wso2/cloud-
 ## Next steps
 
 - [Learn the key concepts](./key-concepts.mdx)
+- [See the services in Choreo Cloud](./what-is-choreo-cloud.mdx#services)
 - [Agent Management documentation](https://choreolabs.com/agent-platform/docs/cloud/get-started/what-is-amp/)
